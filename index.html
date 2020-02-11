@@ -7,15 +7,216 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Mark Walshs Portfolio</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarResponsive" id="home">
+
+
+
+  <!--- Hero Section --->
+
+
+  <header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="assets/images/Fut.vid" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">Mark Walsh</h1>
+          <h5 class="lead mb-0">Full Stack Software Developer</h5>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Navigation -->
+
+  <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light" data-toggle="affix">
+    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+      <a class="navbar-brand" href="#home">Mark Walsh</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav Ends -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container-fluid ">
+      <div class="text-center">
+        <h2 class="underline">ABOUT</h2>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- About Section Ends -->
+
+  <!-- Portfolio Section -->
+
+
+  <section class="featured-section p-3 p-lg-5" id="portfolio">
+    <div class="container">
+      <h2 class="section-title font-weight-bold mb-5">Portfolio</h2>
+      <div class="row">
+        <div class="col-md-6 mb-5">
+          <div class="card project-card">
+            <div class="row no-gutters">
+              <div class="col-lg-4 card-img-holder">
+                <img src="assets/images/project/project-1.jpg" class="card-img" alt="image">
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="project.html" class="theme-link">Maide Connemara</a></h5>
+                  <p class="card-text">Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum
+                    sociis natoque penatibus et magnis dis parturient montes.</p>
+                  <p class="card-text"><small class="text-muted">Client: Google</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="link-mask">
+              <a class="link-mask-link" href="project.html"></a>
+              <div class="link-mask-text">
+                <a class="btn btn-secondary" href="project.html">
+                  <i class="fas fa-eye mr-2"></i>View Case Study
+                </a>
+              </div>
+            </div>
+            <!--//link-mask-->
+          </div>
+          <!--//card-->
+        </div>
+        <!--//col-->
+        <div class="col-md-6 mb-5">
+          <div class="card project-card">
+            <div class="row no-gutters">
+              <div class="col-lg-4 card-img-holder">
+                <img src="assets/images/project/project-2.jpg" class="card-img" alt="image">
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="project.html" class="theme-link">UFO Sightings</a></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <p class="card-text"><small class="text-muted">Client: Dropbox</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="link-mask">
+              <a class="link-mask-link" href="project.html"></a>
+              <div class="link-mask-text">
+                <a class="btn btn-secondary" href="project.html">
+                  <i class="fas fa-eye mr-2"></i>View Case Study
+                </a>
+              </div>
+            </div>
+            <!--//link-mask-->
+          </div>
+          <!--//card-->
+        </div>
+        <!--//col-->
+        <div class="col-md-6 mb-5">
+          <div class="card project-card">
+            <div class="row no-gutters">
+              <div class="col-lg-4 card-img-holder">
+                <img src="assets/images/project/project-3.jpg" class="card-img" alt="image">
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="project.html" class="theme-link">Chefs Cookbook</a></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <p class="card-text"><small class="text-muted">Client: Google</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="link-mask">
+              <a class="link-mask-link" href="project.html"></a>
+              <div class="link-mask-text">
+                <a class="btn btn-secondary" href="project.html">
+                  <i class="fas fa-eye mr-2"></i>View Case Study
+                </a>
+              </div>
+            </div>
+            <!--//link-mask-->
+          </div>
+          <!--//card-->
+        </div>
+        <!--//col-->
+        <div class="col-md-6 mb-5">
+          <div class="card project-card">
+            <div class="row no-gutters">
+              <div class="col-lg-4 card-img-holder">
+                <img src="assets/images/project/project-4.jpg" class="card-img" alt="image">
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="project.html" class="theme-link">Coming Soon</a></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                  <p class="card-text"><small class="text-muted">Client: Uber</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="link-mask">
+              <a class="link-mask-link" href="project.html"></a>
+              <div class="link-mask-text">
+                <a class="btn btn-secondary" href="project.html">
+                  <i class="fas fa-eye mr-2"></i>View Case Study
+                </a>
+              </div>
+            </div>
+            <!--//link-mask-->
+          </div>
+          <!--//card-->
+        </div>
+        <!--//col-->
+      </div>
+      <!--//row-->
+      <div class="text-center py-3"><a href="portfolio.html" class="btn btn-primary"><i
+            class="fas fa-arrow-alt-circle-right mr-2"></i>View Portfolio</a></div>
+
+    </div>
+    <!--//container-->
+  </section>
+  <!--//featured-section-->
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
