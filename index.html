@@ -5,46 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-16x16.png">
   <title>Mark Walshs Portfolio</title>
-</head>
 
-<body data-spy="scroll" data-target="#navbarResponsive" id="home">
-
+<body data-spy="scroll" data-target="#navbarSupportedContent" id="home">
 
 
-  <!--- Hero Section --->
 
 
+
+  <!-- Section: Navigation -->
   <header>
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="assets/images/Fut.vid" type="video/mp4">
-    </video>
-    <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-center">
-        <div class="w-100 text-white">
-          <h1 class="display-3">Mark Walsh</h1>
-          <h5 class="lead mb-0">Full Stack Software Developer</h5>
-        </div>
-      </div>
-    </div>
-  </header>
 
-
-  <!-- Navigation -->
-
-  <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light" data-toggle="affix">
-    <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-      <a class="navbar-brand" href="#home">Mark Walsh</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
-        aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+      <a class="navbar-brand" href="#"><strong>MW</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse text-center" id="navbarsExample11">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#home">Home</a>
           </li>
@@ -52,171 +40,126 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
+
       </div>
-    </div>
-  </nav>
-  <!-- Nav Ends -->
+    </nav>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container-fluid ">
-      <div class="text-center">
-        <h2 class="underline">ABOUT</h2>
+    <!--// Section: Navigation -->
+
+
+    <!-- Section: Hero  Content -->
+    <div class="view intro-2">
+      <div class="full-bg-img">
+        <div class="mask rgba-purple-light flex-center">
+          <div class="container text-center white-text wow fadeInUp">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-md-12 mb-4 white-text text-center">
+                <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
+                  data-wow-delay="0.3s"><strong>Mark Walsh</strong></h1>
+                <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+                <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Full Stack
+                    Developer</strong></h5>
+                <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.4s"
+                  href="https://github.com/Squelsh84" target="_blank">Github</a>
+                <a class="btn btn-outline-white wow fadeInDown" href="assets/cv/resume.pdf" target="_blank"
+                  data-wow-delay="0.4s">Resume</a>
+
+              </div>
+
+
+              <!--Grid column-->
+            </div>
+
+            <!--Grid row-->
+          </div>
+
+          <!-- Content -->
+        </div>
+
+
       </div>
-
-    </div>
-
-  </section>
-
-
-
-
-
-  <!-- About Section Ends -->
-
-  <!-- Portfolio Section -->
-
-
-  <section class="featured-section p-3 p-lg-5" id="portfolio">
-    <div class="container">
-      <h2 class="section-title font-weight-bold mb-5">Portfolio</h2>
-      <div class="row">
-        <div class="col-md-6 mb-5">
-          <div class="card project-card">
-            <div class="row no-gutters">
-              <div class="col-lg-4 card-img-holder">
-                <img src="assets/images/project/project-1.jpg" class="card-img" alt="image">
-              </div>
-              <div class="col-lg-8">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="project.html" class="theme-link">Maide Connemara</a></h5>
-                  <p class="card-text">Project intro lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum
-                    sociis natoque penatibus et magnis dis parturient montes.</p>
-                  <p class="card-text"><small class="text-muted">Client: Google</small></p>
-                </div>
-              </div>
-            </div>
-            <div class="link-mask">
-              <a class="link-mask-link" href="project.html"></a>
-              <div class="link-mask-text">
-                <a class="btn btn-secondary" href="project.html">
-                  <i class="fas fa-eye mr-2"></i>View Case Study
-                </a>
-              </div>
-            </div>
-            <!--//link-mask-->
-          </div>
-          <!--//card-->
-        </div>
-        <!--//col-->
-        <div class="col-md-6 mb-5">
-          <div class="card project-card">
-            <div class="row no-gutters">
-              <div class="col-lg-4 card-img-holder">
-                <img src="assets/images/project/project-2.jpg" class="card-img" alt="image">
-              </div>
-              <div class="col-lg-8">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="project.html" class="theme-link">UFO Sightings</a></h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque
-                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                  <p class="card-text"><small class="text-muted">Client: Dropbox</small></p>
-                </div>
-              </div>
-            </div>
-            <div class="link-mask">
-              <a class="link-mask-link" href="project.html"></a>
-              <div class="link-mask-text">
-                <a class="btn btn-secondary" href="project.html">
-                  <i class="fas fa-eye mr-2"></i>View Case Study
-                </a>
-              </div>
-            </div>
-            <!--//link-mask-->
-          </div>
-          <!--//card-->
-        </div>
-        <!--//col-->
-        <div class="col-md-6 mb-5">
-          <div class="card project-card">
-            <div class="row no-gutters">
-              <div class="col-lg-4 card-img-holder">
-                <img src="assets/images/project/project-3.jpg" class="card-img" alt="image">
-              </div>
-              <div class="col-lg-8">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="project.html" class="theme-link">Chefs Cookbook</a></h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque
-                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                  <p class="card-text"><small class="text-muted">Client: Google</small></p>
-                </div>
-              </div>
-            </div>
-            <div class="link-mask">
-              <a class="link-mask-link" href="project.html"></a>
-              <div class="link-mask-text">
-                <a class="btn btn-secondary" href="project.html">
-                  <i class="fas fa-eye mr-2"></i>View Case Study
-                </a>
-              </div>
-            </div>
-            <!--//link-mask-->
-          </div>
-          <!--//card-->
-        </div>
-        <!--//col-->
-        <div class="col-md-6 mb-5">
-          <div class="card project-card">
-            <div class="row no-gutters">
-              <div class="col-lg-4 card-img-holder">
-                <img src="assets/images/project/project-4.jpg" class="card-img" alt="image">
-              </div>
-              <div class="col-lg-8">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="project.html" class="theme-link">Coming Soon</a></h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque
-                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                  <p class="card-text"><small class="text-muted">Client: Uber</small></p>
-                </div>
-              </div>
-            </div>
-            <div class="link-mask">
-              <a class="link-mask-link" href="project.html"></a>
-              <div class="link-mask-text">
-                <a class="btn btn-secondary" href="project.html">
-                  <i class="fas fa-eye mr-2"></i>View Case Study
-                </a>
-              </div>
-            </div>
-            <!--//link-mask-->
-          </div>
-          <!--//card-->
-        </div>
-        <!--//col-->
-      </div>
-      <!--//row-->
-      <div class="text-center py-3"><a href="portfolio.html" class="btn btn-primary"><i
-            class="fas fa-arrow-alt-circle-right mr-2"></i>View Portfolio</a></div>
 
     </div>
-    <!--//container-->
-  </section>
-  <!--//featured-section-->
+    <div class="down-but col-md-12 mb-4 white-text text-center" id="scroll-but">
+      <a href="#about" data-wow-delay="0.4s" class=" wow fadeInDown"><span></span></a>
+    </div>
+
+  </header>
+  <!--// Section: Hero Content -->
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!--- Section: About Content --->
+
+
+  <div class="container-fluid z-depth-1 py-5 my-5" id="about">
+    <section class="mx-md-5 text-center text-lg-left">
+      <h2 class="text-center font-weight-bold mb-4 pb-2">About Me</h2>
+      <hr class="w-header my-4">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-12">
+          <div class="row p-5">
+            <div class="col-lg-8 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="font-weight-bold  mb-2"><strong>Mark Walsh</strong></h3>
+                <p class="font-weight-bold text-muted ">Full Stack Developer</p>
+              </div>
+              <p class="lead text-center text-muted pt-2 mb-5">I am an aspiring Full Stack Software Developer from
+                Tipperary. After living in
+                Brazil for six years I returned with my family to the sunny west coast of Ireland. In 2019, I enrolled
+                in the Full-Stack Software Development course through Code Institute and have developed a new array of
+                skills which can be seen below.</p>
+
+            </div>
+            <div class="col-lg-4 d-flex mb-2 align-items-center">
+              <div class="avatar mx-4 w-150 white d-flex justify-content-center align-items-center">
+                <img src="assets/images/mark.jpg" class="rounded-circle img-fluid z-depth-1" alt="mans picture">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <!---// Section: About Content --->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+
+  <!-- Custom JavaScript -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
