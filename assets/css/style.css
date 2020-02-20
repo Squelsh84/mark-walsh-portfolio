@@ -1,0 +1,243 @@
+
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+
+
+/*-- Navbar --*/
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+ .navbar:not(.top-nav-collapse) {
+  background: #78909c !important;
+ }
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+
+.intro-2 {
+  background: url("https://cdn.pixabay.com/photo/2015/05/26/23/52/technology-785742_960_720.jpg")no-repeat center center;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.top-nav-collapse {
+  background-color: #4285F4;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+      background-color: #4285F4;
+  }
+}
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+
+
+
+/*-- Scroll button --*/
+
+#scroll-but a {
+  padding-top: 60px;
+}
+#scroll-but a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#scroll-but a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#scroll-but a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.down-but a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.down-but a:hover {
+  opacity: .5;
+}
+
+
+/*-- Portfolio--*/
+
+.mask.rgba-gradient {
+  background: -webkit-linear-gradient(45deg,rgba(29,236,197,.7),rgba(91,14,214,.7) 100%);
+  background: -webkit-gradient(linear,45deg,from(rgba(29,236,197,.7)),to(rgba(91,14,214,.7)));
+  background: -o-linear-gradient(45deg,rgba(29,236,197,.7),rgba(91,14,214,.7) 100%);
+  background: linear-gradient(to 45deg,rgba(29,236,197,.7),rgba(91,14,214,.7) 100%);
+}
+
+
+
+
+/*-- footer --*/
+
+.card-header, .page-footer {
+
+  background-color: #78909c;
+}
+
+
+
+
+/*---- BACK-TO-TOP  ----*/
+
+#back-to-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  -webkit-transition: background-color .3s, 
+    opacity .3s, visibility .5s;
+  -o-transition: background-color .3s, 
+    opacity .3s, visibility .5s;
+  transition: background-color .3s, 
+    opacity .3s, visibility .5s;
+}
+
+
+#back-to-top:hover {
+  cursor: pointer;
+}
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
