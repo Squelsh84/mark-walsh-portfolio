@@ -1,25 +1,21 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
-
-
-
-
-
 html {
   scroll-behavior: smooth;
 }
 
-
-
 body {
-  
-  overflow-x: hidden;
+  position: relative;
+  overflow-y: auto;
   position: relative;
 }
 
+h1 {
+  letter-spacing: 8px;
+}
 
-
-
+h5 {
+  letter-spacing: 3px;
+}
+ 
 /*-- Navbar --*/
 
 html,
@@ -27,6 +23,10 @@ body,
 header,
 .view {
   height: 100%;
+}
+
+.navbar-nav .nav-link.active {
+  background-color:rgba(229, 229, 229, 0.299);
 }
 
 @media (max-width: 740px) {
@@ -52,13 +52,6 @@ header,
  }
 }
 
-h1 {
-  letter-spacing: 8px;
-}
-
-h5 {
-  letter-spacing: 3px;
-}
 
 .hr-light {
   border-top: 3px solid #fff;
@@ -83,12 +76,6 @@ h5 {
   .navbar {
       background-color: #4285F4;
   }
-}
-html,
-body,
-header,
-.view {
-  height: 100%;
 }
 
 
