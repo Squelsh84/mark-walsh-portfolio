@@ -58,3 +58,15 @@ btn.on('click', (e) => {
   e.preventDefault();
   $('html, body').animate({ scrollTop: 0 }, '300');
 });
+
+
+
+/* function to refresh page when Modal close button is clicked */
+
+function refreshPage() {
+  window.location.reload();
+}
+
+
+
+

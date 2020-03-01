@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 
 
 
@@ -106,7 +108,8 @@ header,
   margin-left: -23px;
   border: 1px solid #fff;
   border-radius: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 #scroll-but a span::after {
   position: absolute;
@@ -119,8 +122,10 @@ header,
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 #scroll-but a span::before {
   position: absolute;
@@ -130,12 +135,14 @@ header,
   content: '';
   width: 44px;
   height: 44px;
-  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+          box-shadow: 0 0 0 0 rgba(255,255,255,.1);
   border-radius: 100%;
   opacity: 0;
   -webkit-animation: sdb03 3s infinite;
   animation: sdb03 3s infinite;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 @-webkit-keyframes sdb03 {
   0% {
@@ -145,7 +152,8 @@ header,
     opacity: 1;
   }
   60% {
-    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    -webkit-box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+            box-shadow: 0 0 0 60px rgba(255,255,255,.1);
     opacity: 0;
   }
   100% {
@@ -160,7 +168,8 @@ header,
     opacity: 1;
   }
   60% {
-    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    -webkit-box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+            box-shadow: 0 0 0 60px rgba(255,255,255,.1);
     opacity: 0;
   }
   100% {
@@ -175,11 +184,14 @@ header,
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
   color: #fff;
   font : normal 400 20px/1 'Josefin Sans', sans-serif;
   letter-spacing: .1em;
   text-decoration: none;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
   transition: opacity .3s;
 }
 .down-but a:hover {
@@ -190,9 +202,8 @@ header,
 /*-- Portfolio--*/
 
 .mask.rgba-gradient {
-  background: -webkit-linear-gradient(45deg,rgba(29,236,197,.7),rgba(91,14,214,.7) 100%);
-  background: -webkit-gradient(linear,45deg,from(rgba(29,236,197,.7)),to(rgba(91,14,214,.7)));
   background: -o-linear-gradient(45deg,rgba(29,236,197,.7),rgba(91,14,214,.7) 100%);
+  background: -webkit-gradient(linear,45deg,from(rgba(29,236,197,.7)),to(rgba(91,14,214,.7)));
   background: linear-gradient(to 45deg,rgba(29,236,197,.7),rgba(91,14,214,.7) 100%);
 }
 
