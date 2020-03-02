@@ -7,6 +7,7 @@ function sendMail(contactForm) {
     .then(
       function (response) {
         console.log("SUCCESS", response);
+        window.location.replace("index.html");
       },
       function (error) {
         console.log("FAILED", error);
