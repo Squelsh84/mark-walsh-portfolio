@@ -7,7 +7,7 @@ function sendMail(contactForm) {
     .then(
       function (response) {
         console.log("SUCCESS", response);
-        window.location.replace("thanks.html");
+        window.location.replace("https://www.markwalsh.dev/thanks.html");
       },
       function (error) {
         console.log("FAILED", error);
