@@ -10,9 +10,9 @@
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
   <!-- Bootstrap core CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-16x16.png">
@@ -41,10 +41,11 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
       <a class="navbar-brand" href="#"><strong>MW</strong></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id=".navbar">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item ">
             <a class="nav-link" href="#home">Home</a>
@@ -62,7 +63,6 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-
       </div>
     </nav>
 
@@ -398,6 +398,177 @@
   <!--// Section: Skills Content -->
 
 
+  <!-- Test section -->
+
+  <div class="container my-5">
+
+    <!-- Section -->
+    <section>
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+              <!-- Grid row -->
+              <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 py-5 pl-5">
+
+                  <h5 class="font-weight-normal mb-3">Paper cup mockup</h5>
+
+                  <p class="text-muted">Key letters, explain which writing we he carpeting or fame, the itch expand
+                    medical amped through constructing time. And scarfs, gain, get showed accounts decades.</p>
+
+                  <ul class="list-unstyled font-small mt-5">
+                    <li>
+                      <p class="text-uppercase mb-2"><strong>Client</strong></p>
+                      <p class="text-muted mb-4">Envato Inc.</p>
+                    </li>
+
+                    <li>
+                      <p class="text-uppercase mb-2"><strong>Date</strong></p>
+                      <p class="text-muted mb-4">June 27, 2019</p>
+                    </li>
+
+                    <li>
+                      <p class="text-uppercase mb-2"><strong>Skills</strong></p>
+                      <p class="text-muted mb-4">Design, HTML, CSS, Javascript</p>
+                    </li>
+
+                    <li>
+                      <p class="text-uppercase mb-2"><strong>Address</strong></p>
+                      <a href="https://mdbootstrap.com/docs/jquery/design-blocks/">MDBootstrap</a>
+                    </li>
+                  </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+
+                  <div class="view rounded-right">
+                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/5.jpg" alt="Sample image">
+                  </div>
+
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">portfolio</h6>
+      <h3 class="font-weight-bold text-center dark-grey-text pb-2">Product Designs</h3>
+      <hr class="w-header my-4">
+      <p class="lead text-center text-muted pt-2 mb-5">You can find several product design by our professional team in
+        this section.</p>
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-12 dark-grey-text d-flex justify-content-center mb-5">
+
+          <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter" data-rel="all">All</button>
+          <p class="font-weight-bold mb-0 px-1 py-1">/</p>
+          <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter" data-rel="1">Design</button>
+          <p class="font-weight-bold mb-0 px-1 py-1">/</p>
+          <button type="button" class="btn btn-flat btn-lg m-0 px-3 py-1 filter" data-rel="2">Mockup</button>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+      <!-- Grid row -->
+      <div class="gallery mb-5" id="gallery">
+
+        <!-- Grid column -->
+        <div class="mb-3 pics all 2 animation">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg"
+              alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="https://mdbootstrap.com/img/Photos/Vertical/7.jpg"
+              alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="https://mdbootstrap.com/img/Photos/Vertical/4.jpg"
+              alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics all 2 animation">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="https://mdbootstrap.com/img/Photos/Others/images/63.jpg"
+              alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics all 2 animation">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="https://mdbootstrap.com/img/Photos/Others/images/64.jpg"
+              alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="mb-3 pics animation all 1">
+          <a data-toggle="modal" data-target="#basicExampleModal">
+            <img class="img-fluid z-depth-1 rounded" src="https://mdbootstrap.com/img/Photos/Vertical/5.jpg"
+              alt="Card image cap">
+          </a>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </section>
+    <!-- Section -->
+
+  </div>
+
+  <!--// Test-->
+
+
+
+
+
+
+
+
 
 
   <div class="container-fluid my-5 py-5 z-depth-1" id="contact">
@@ -537,13 +708,15 @@
 
 
   <!-- JQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
   <!-- Custom JavaScript -->
   <script src="assets/js/main.js"></script>
