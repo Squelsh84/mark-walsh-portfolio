@@ -20,13 +20,8 @@
   <title>Mark Walshs Portfolio</title>
 
 
-  <!-- email.js -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("user_L9R7o7TZutreSANVO4llA");
-    })();
-  </script>
+
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173506859-1"></script>
@@ -459,7 +454,12 @@
         <!-- Grid column -->
         <div class="col-md-9 mb-md-0 mb-5">
 
-          <form onsubmit="return sendMail(this);">
+          <form action="https://formsubmit.co/d29720b4edf32e2213321115ffe3d159" method="POST">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://www.markwalsh.dev/thanks.html">
 
             <!-- Grid row -->
             <div class="row">
@@ -467,8 +467,8 @@
               <!-- Grid column -->
               <div class="col-md-6">
                 <div class="md-form mb-0">
-                  <input type="text" name="name" id="fullname" class="form-control" required="required">
-                  <label for="fullname">Your name</label>
+                  <input type="text" class="form-control" name="name" id="firstName" required>
+                  <label for="fullname">Your Name</label>
                 </div>
               </div>
               <!-- Grid column -->
@@ -476,8 +476,8 @@
               <!-- Grid column -->
               <div class="col-md-6">
                 <div class="md-form mb-0">
-                  <input type="email" name="emailaddress" id="emailaddress" class="form-control" required="required">
-                  <label for="emailaddress">Your email</label>
+                  <input type="email" name="email&nbsp;address" id="fromName" class="form-control" required="required">
+                  <label for="emailaddress">Your Email</label>
                 </div>
               </div>
               <!-- Grid column -->
@@ -491,7 +491,7 @@
               <!-- Grid column -->
               <div class="col-md-12">
                 <div class="md-form mb-0">
-                  <input type="text" class="form-control" id="contact-Subject" required="required">
+                  <input type="text" class="form-control" id="contact-Subject" name="subject" required="required">
                   <label for="contact-Subject">Subject</label>
                 </div>
               </div>
@@ -506,9 +506,9 @@
               <!-- Grid column -->
               <div class="col-md-12">
                 <div class="md-form">
-                  <textarea class="form-control md-textarea" rows="3" name="portfoliosummary" id="portfoliosummary"
+                  <textarea class="form-control md-textarea" rows="3" name="message" id="msg"
                     required="required"></textarea>
-                  <label for="portfoliosummary">Your message</label>
+                  <label for="message">Your Message</label>
                 </div>
               </div>
               <!-- Grid column -->
@@ -589,7 +589,6 @@
 
   <!-- Custom JavaScript -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
